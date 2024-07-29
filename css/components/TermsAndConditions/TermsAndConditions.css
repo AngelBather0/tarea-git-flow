@@ -1,0 +1,31 @@
+.Content__termsAndConditions {
+    padding: 80px 0px;
+    padding-top: 100px;
+}
+.Content__termsAndConditions--title {
+    margin-bottom: 40px;
+}
+.Content__termsAndConditions--title h2 {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--buttonYellow);
+    font-style: italic;
+    font-family: 'Poppins', sans-serif;
+}
+.Content__termsAndConditions--term-title {
+    margin-bottom: 20px;
+}
+.Content__termsAndConditions--term-title h4 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+.Content__termsAndConditions--term-text p {
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--termPoliticsText);
+    font-family: 'Poppins', sans-serif;
+    line-height: 2.1;
+    margin-bottom: 60px;
+}

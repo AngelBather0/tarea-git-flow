@@ -1,0 +1,73 @@
+.Content__about {
+    padding: 100px 0px;
+}
+.Content__about--container {
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+}
+.Content__about--item {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 120px;
+}
+.Content__about--item:nth-of-type(2) {
+    grid-template-columns: 1fr 1.1fr;
+}
+.about__item--details-icon {
+    margin-bottom: 20px;
+}
+.about__item--details-icon img {
+    margin-left: 110px;
+}
+.about__item--details-title {
+    margin-bottom: 30px;
+}
+.about__item--details-title h2 {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--buttonYellow);
+    font-style: italic;
+    font-family: 'Poppins', sans-serif;
+}
+.about__item--details-description p {
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--termPoliticsText);
+    font-family: 'Poppins', sans-serif;
+    line-height: 2.1;
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 1200px) {
+    .Content__about--item {
+        gap: 80px;
+    }
+    .Content__about--item-banner img {
+        max-width: 100%;
+    }
+}
+@media(max-width: 1024px) {
+    .Content__about--item {
+        gap: 80px;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-areas: 
+        "details"
+        "banner";
+    }
+    .Content__about--item:nth-of-type(2) {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .Content__about--item-details {
+        grid-area: details;
+    }
+    .Content__about--item-banner {
+        grid-area: banner;
+    }
+}
+@media(max-width: 600px) {
+    .about__item--details-title h2 {
+        font-size: 40px;
+    }
+}
