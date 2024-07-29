@@ -1,0 +1,251 @@
+.Content__productDetails {
+    padding: 80px 0px;
+}
+.Content__productDetails--container {
+    display: grid;
+    grid-template-columns: 1fr 1.75fr;
+    gap: 60px;
+}
+.Content__productDetails--banner {
+    padding: 60px 40px;
+    max-height: 550px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 8px;
+}
+.Content__productDetails--mainImage img {
+    max-width: 352px;
+    width: 100%;
+    margin-top: -80px;
+}
+.Content__productDetails--gallery {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.Content__productDetails--gallery > div {
+    cursor: pointer;
+}
+.Content__productDetails--gallery > div img {
+    max-width: 120px;
+    width: 100%;
+}
+
+/* DETAILS */
+
+.Content__productDetails--details {
+    max-width: 570px;
+}
+.Content__productDetails--date {
+    margin-bottom: 5px;
+}
+.Content__productDetails--date p {
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: #fff;
+}
+.Content__productDetails--name {
+    margin-bottom: 5px;
+}
+.Content__productDetails--name h2 {
+    font-size: 34px;
+    font-weight: 700;
+    color: var(--topBarYellow);
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.2;
+}
+.Content__productDetails--tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.Content__productDetails--tags-tag {
+    padding: 6px 15px;
+    padding-right: 25px;
+    position: relative;
+}
+.Content__productDetails--tags-tag::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid #171717;
+}
+.Content__productDetails--tags-tag p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+}
+.newProduct {
+    background-color: var(--newProductBG);
+}
+.usedProduct {
+    background-color: var(--usedProductBG);
+}
+.reconditionedProduct {
+    background-color: var(--reconditionedProductBG);
+}
+.Content__productDetails--description {
+    margin-bottom: 10px;
+}
+.Content__productDetails--description p {
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+.Content__productDetails--foundations {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+.Content__productDetails--foundations > div img {
+    max-width: 100%;
+}
+.Content__productDetails--specs {
+    margin-bottom: 20px;
+}
+.Content__productDetails--specs-spec {
+    padding: 5px 15px;
+}
+.Content__productDetails--specs-spec:first-of-type {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.Content__productDetails--specs-spec:last-of-type {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.Content__productDetails--specs-spec:nth-child(even) {
+    background-color: var(--specsPairBG);
+}
+
+.Content__productDetails--specs-spec:nth-child(odd) {
+    background-color: var(--specsOddBG);
+}
+.Content__productDetails--specs-spec p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+    font-family: 'Inter', sans-serif;
+}
+.Content__productDetails--numberAmount {
+    margin-bottom: 20px;
+}
+.Content__productDetails--numberAmount p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    font-family: 'Inter';
+}
+.Content__productDetails--chooseNumbers {
+    margin-bottom: 12px;
+}
+.Content__productDetails--chooseNumbers button {
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    border: 1px solid transparent;
+    background-color: var(--topBarYellow);
+    width: 220px;
+    height: 46px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+.Content__productDetails--chooseNumbers button:hover {
+    border-color: var(--topBarYellow);
+    background-color: transparent;
+    transition: .3s ease-in-out;
+}
+.Content__productDetails--availableNumbers {
+    margin-bottom: 20px;
+}
+.Content__productDetails--availableNumbers p {
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: var(--availableNumbersColor);
+}
+.Content__productDetails--share {
+    margin-bottom: 12px;
+}
+.Content__productDetails--share-title {
+    margin-bottom: 10px;
+}
+.Content__productDetails--share-title h4 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+}
+.Content__productDetails--share-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.Content__productDetails--share-icons > div {
+    cursor: pointer;
+}
+.Content__productDetails--bePartner button {
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    background-color: transparent;
+    padding: 10px 25px;
+    border: 1px solid var(--textYellow);
+    width: fit-content;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+.Content__productDetails--bePartner button:hover {
+    background-color: var(--textYellow);
+    transition: .3s ease-in-out;
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 1024px) {
+    .Content__productDetails--container {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .Content__productDetails--banner {
+        max-width: 570px;
+    }
+}
+@media(max-width: 768px) {
+    .Content__availableNumbers--table {
+        grid-template-columns: repeat(8,1fr) !important;
+        width: 100% !important;
+        box-sizing: border-box;
+    }
+    .Content__availableNumbers--meanings {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+@media(max-width: 600px) {
+    .Content__availableNumbers--table {
+        grid-template-columns: repeat(6,1fr) !important;
+    }
+}
+@media(max-width: 500px) {
+    .Content__availableNumbers--table {
+        grid-template-columns: repeat(5,1fr) !important;
+        padding: 20px !important;
+    }
+}
